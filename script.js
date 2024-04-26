@@ -11,16 +11,19 @@ function nextImage(){
 setInterval(nextImage, 10000);
 
 
-//pour le menu horizontal
-const menu = document.querySelector('.menu');
-const prev = document.querySelector('.prev');
-const next = document.querySelector('.next');
+//pour le menu header
+const menuBar = document.querySelector('.open-menu');
+const menuBar0 = document.querySelector('.close-menu');
+const menuList = document.querySelector('.menuHeader');
 
-prev.addEventListener('click',()=>{
-	menu.scrollLeft -= 100;
+
+
+menuBar.addEventListener('click',()=>{
+	menuList.classList.toggle('menu-on') 
 });
 
-next.addEventListener('click',()=>{
-	menu.scrollLeft += 100;
+menuBar0.addEventListener('click',()=>{
+	menuList.classList.remove('menu-on')
 });
+
 
