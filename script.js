@@ -27,3 +27,6 @@ menuBar0.addEventListener('click',()=>{
 });
 
 
+//pour le menu slide
+    
+	
